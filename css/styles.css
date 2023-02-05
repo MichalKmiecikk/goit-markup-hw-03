@@ -1,0 +1,188 @@
+:root {
+  --text-color: #757575;
+  --selection-color: #2196f3;
+  --main-white: #ffffff;
+  --logo-black: #000000;
+  --bodytext-color: #212121;
+  --footerbackground-color: #2f303a;
+  --teamsectionbackgroundn-color: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--bodytext-color);
+}
+
+.logo-web-top,
+.logo-studio-top {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19rem;
+  letter-spacing: 0.03em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-studio-top {
+  color: var(--logo-black);
+}
+
+.logo-web-top {
+  color: var(--selection-color);
+}
+
+.title-about {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14rem;
+  letter-spacing: 0.03em;
+}
+
+.text-about {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.71rem;
+  letter-spacing: 0.03em;
+}
+
+.navigation-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14rem;
+  letter-spacing: 0.02em;
+}
+.navigation-links a:hover,
+.navigation-links a:focus,
+.navigation-links a:active {
+  color: var(--selection-color);
+}
+
+.contact a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14rem;
+  letter-spacing: 0.02;
+}
+.contact a:hover,
+.contact a:focus,
+.contact a:active {
+  color: var(--selection-color);
+}
+
+.title-main {
+  color: var(--main-white);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.5rem;
+  letter-spacing: 0.6;
+  background: var(--footerbackground-color);
+}
+
+.title-main + button[type="button"] {
+  color: var(--main-white);
+  font-weight: 700;
+  line-height: 1.88rem;
+  letter-spacing: 0.06em;
+}
+
+.image-section .image-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16rem;
+  letter-spacing: 0.03em;
+}
+
+.teamcard-section .teamcard-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16rem;
+  letter-spacing: 0.03;
+}
+.filters button {
+  font-weight: 500;
+  line-height: 1.62rem;
+  letter-spacing: 0.03;
+}
+.team-caption .upper-caption {
+  font-weight: 500;
+  line-height: 1.19rem;
+  letter-spacing: 0.03em;
+}
+
+.team-caption .lower-caption {
+  color: var(--text-color);
+  line-height: 1.19rem;
+  letter-spacing: 0.03em;
+}
+
+.projects-caption .upper-caption {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0.06em;
+}
+
+.projects-caption .lower-caption {
+  color: var(--text-color);
+  line-height: 1.88rem;
+  letter-spacing: 0.03em;
+}
+
+.footer-address .site {
+  text-decoration: none;
+  color: var(--main-white);
+  font-size: 14px;
+  line-height: 1.71rem;
+  letter-spacing: 0.03em;
+}
+.footer-address .site:hover,
+.footer-address .site:focus,
+.footer-address .site:active {
+  color: var(--selection-color);
+}
+.footer-address .contact {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71rem;
+}
+.footer-address .contact:hover,
+.footer-address .contact:focus,
+.footer-address .contact:active {
+  color: var(--selection-color);
+}
+
+button[type="button"] {
+  cursor: pointer;
+}
+button[type="button"]:hover,
+button[type="button"]:focus,
+button[type="button"]:active {
+  color: var(--main-white);
+  background: var(--selection-color);
+}
+
+.logo-web-bottom,
+.logo-studio-bottom {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19rem;
+  letter-spacing: 0.03em;
+}
+.logo-web-bottom {
+  color: var(--selection-color);
+}
+.logo-studio-bottom {
+  color: var(--main-white);
+}
+.background-footer {
+  background-color: var(--footerbackground-color);
+}
+.teamcard-section {
+  background-color: var(--teamsectionbackgroundn-color);
+}
