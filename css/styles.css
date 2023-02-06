@@ -44,7 +44,10 @@ body {
   line-height: 1.71rem;
   letter-spacing: 0.03em;
 }
-
+.navigation-links.container {
+  display: flex;
+  justify-content: baseline;
+}
 .navigation-links a {
   color: var(--text-color);
   text-decoration: none;
@@ -66,6 +69,10 @@ body {
 }
 .filters > li {
   list-style-type: none;
+}
+.contact.container {
+  display: block;
+  justify-content: right;
 }
 .contact a {
   text-decoration: none;
@@ -237,10 +244,11 @@ button[type="button"]:active {
   height: 80px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
   padding: 0;
   width: 1600px;
+  border: 1px solid #ececec;
 }
 .link.container {
   display: flex;
