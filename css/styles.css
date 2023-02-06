@@ -83,6 +83,9 @@ body {
 .projects-links > li {
   list-style-type: none;
 }
+.projects-links.container {
+  display: flex;
+}
 .title-main {
   color: var(--main-white);
   font-size: 44px;
@@ -130,6 +133,10 @@ body {
   font-weight: 500;
   line-height: 1.62rem;
   letter-spacing: 0.03;
+}
+.filters.container {
+  display: flex;
+  justify-content: center;
 }
 .team-caption .upper-caption {
   font-weight: 500;
@@ -230,10 +237,10 @@ button[type="button"]:active {
   height: 80px;
   margin: auto;
   display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   width: 1600px;
-  background-color: #2196f3;
 }
 .link.container {
   display: flex;
