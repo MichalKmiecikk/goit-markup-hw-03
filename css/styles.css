@@ -186,3 +186,10 @@ button[type="button"]:active {
 .teamcard-section {
   background-color: var(--teamsectionbackgroundn-color);
 }
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.section {
+  padding: 94px 0px 94px 0px;
+}
