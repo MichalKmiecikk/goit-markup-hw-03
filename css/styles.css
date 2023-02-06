@@ -53,12 +53,20 @@ body {
   line-height: 1.14rem;
   letter-spacing: 0.02em;
 }
+.navigation-links > li {
+  list-style-type: none;
+}
 .navigation-links a:hover,
 .navigation-links a:focus,
 .navigation-links a:active {
   color: var(--selection-color);
 }
-
+.contact > li {
+  list-style-type: none;
+}
+.filters > li {
+  list-style-type: none;
+}
 .contact a {
   text-decoration: none;
   color: var(--text-color);
@@ -72,13 +80,20 @@ body {
 .contact a:active {
   color: var(--selection-color);
 }
-
+.projects-links > li {
+  list-style-type: none;
+}
 .title-main {
   color: var(--main-white);
   font-size: 44px;
   font-weight: 900;
   line-height: 1.5rem;
   letter-spacing: 0.6;
+  width: 1600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--footerbackground-color);
 }
 
@@ -87,6 +102,9 @@ body {
   font-weight: 700;
   line-height: 1.88rem;
   letter-spacing: 0.06em;
+  justify-items: center;
+  display: flex;
+  margin: auto;
 }
 
 .image-section .image-title {
@@ -95,12 +113,18 @@ body {
   line-height: 1.16rem;
   letter-spacing: 0.03em;
 }
+.link > li {
+  list-style-type: none;
+}
 
 .teamcard-section .teamcard-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16rem;
   letter-spacing: 0.03;
+}
+.teamcard-list > li {
+  list-style-type: none;
 }
 .filters button {
   font-weight: 500;
@@ -138,6 +162,7 @@ body {
   font-size: 14px;
   line-height: 1.71rem;
   letter-spacing: 0.03em;
+  list-style-type: none;
 }
 .footer-address .site:hover,
 .footer-address .site:focus,
@@ -155,7 +180,9 @@ body {
 .footer-address .contact:active {
   color: var(--selection-color);
 }
-
+.footer-address > li {
+  list-style-type: none;
+}
 button[type="button"] {
   cursor: pointer;
 }
@@ -181,15 +208,20 @@ button[type="button"]:active {
   color: var(--main-white);
 }
 .background-footer {
+  width: 1600px;
+  height: 252px;
   background-color: var(--footerbackground-color);
 }
 .teamcard-section {
+  width: 1600px;
   background-color: var(--teamsectionbackgroundn-color);
 }
 .container {
   width: 1200px;
   margin: auto;
-  display: flex;
+}
+.container > li {
+  list-style-type: none;
 }
 .section {
   padding: 94px 0px 94px 0px;
@@ -199,9 +231,24 @@ button[type="button"]:active {
   margin: auto;
   display: flex;
   list-style: none;
-  justify-content: space-between;
-  align-items: center;
   padding: 0;
-  width: 100%;
+  width: 1600px;
+  background-color: #2196f3;
 }
-
+.link.container {
+  display: flex;
+}
+.teamcard-list.container {
+  display: flex;
+}
+.lorem-list.container {
+  display: flex;
+}
+.image-section .image-title {
+  display: flex;
+  justify-content: center;
+}
+.teamcard-section > .teamcard-title {
+  display: flex;
+  justify-content: center;
+}
