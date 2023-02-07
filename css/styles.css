@@ -101,11 +101,26 @@ body {
 .contact a:active {
   color: var(--selection-color);
 }
+.projects-links-area {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 .projects-links > li {
   list-style-type: none;
 }
 .projects-links.container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.projects-links-item {
+  width: 370px;
+  height: auto;
+  flex-basis: 13.3;
+}
+.projects-caption {
 }
 .title-main.container {
   width: 696px;
@@ -130,24 +145,10 @@ body {
   margin: auto;
 }
 
-.image-section .image-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16rem;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
 .link > li {
   list-style-type: none;
 }
 
-.teamcard-section .teamcard-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16rem;
-  letter-spacing: 0.03;
-  margin-bottom: 50px;
-}
 .teamcard-list > li {
   list-style-type: none;
 }
@@ -162,29 +163,37 @@ body {
 }
 .team-caption .upper-caption {
   font-weight: 500;
-  line-height: 1.19rem;
+  font-size: 14px;
+  line-height: 1rem;
   letter-spacing: 0.03em;
 }
 
 .team-caption .lower-caption {
+  font-size: 14px;
   color: var(--text-color);
-  line-height: 1.19rem;
+  line-height: 1.46rem;
   letter-spacing: 0.03em;
 }
 
-.projects-caption .upper-caption {
-  margin-bottom: 4px;
+.projects-caption .upper-caption, {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--bodytext-color);
-
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding: 0px;
 }
 
 .projects-caption .lower-caption {
   line-height: 1.88;
-  color: var(--text-color)
+  color: var(--text-color);
+}
+
+footer {
+  background-color: var(--background-footer-color);
+  padding: 60px 0;
 }
 
 .footer-address .site {
@@ -213,6 +222,7 @@ body {
 }
 .footer-address > li {
   list-style-type: none;
+  justify-content: left;
 }
 button[type="button"] {
   cursor: pointer;
@@ -239,18 +249,24 @@ button[type="button"]:active {
   color: var(--main-white);
 }
 .background-footer {
+  display: block;
+  margin: auto;
   width: 1600px;
   height: 252px;
   background-color: var(--footerbackground-color);
 }
-.teamcard-section {
-  width: 1600px;
-  background-color: var(--teamsectionbackgroundn-color);
+.main-button {
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: #2196f3;
 }
 .main-section-background {
+  margin: auto;
   height: 600px;
   width: 1600px;
-  margin: auto;
+  margin-bottom: 50px;
   text-align: center;
   padding: 200px 0;
   background-color: var(--footerbackground-color);
@@ -263,9 +279,7 @@ button[type="button"]:active {
 .container > li {
   list-style-type: none;
 }
-.section {
-  padding: 94px 0px 94px 0px;
-}
+
 .header-box {
   align-items: center;
   height: 80px;
@@ -282,48 +296,65 @@ button[type="button"]:active {
   align-items: center;
 }
 
+.lorem-list.container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.image-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--bodytext-color);
+}
+
+.image-section {
+  margin: 0px;
+}
 .link.container {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
-.teamcard-list.container {
-  display: flex;
+.teamcard-section-background {
+  display: block;
+  margin: auto;
+  width: 1600px;
+  height: 648px;
+  background-color: var(--teamsectionbackgroundn-color);
 }
-.lorem-list.container {
+.teamcard-section {
   display: flex;
-  gap: 30px;
   justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-.image-section .image-title {
-  display: flex;
-  justify-content: center;
-  font-weight: 700;
+.teamcard-title {
   font-size: 36px;
-  line-height: 1;
-  letter-spacing: 0.03em;
-  color: var(--bodytext-color);
-  text-align: center;
-  margin-bottom: 50px;
-}
-.teamcard-section > .teamcard-title {
+  font-weight: 700;
+  line-height: 1.16rem;
+  letter-spacing: 0.03;
   display: flex;
   justify-content: center;
-  height: ;
+  align-self: baseline;
 }
-.image-section {
-  margin: 0px;
+.teamcard-figure {
+  display: block;
+  background-color: var(--main-white);
 }
-.teamcard-section.container {
-  width: 100%;
-  margin: 0px;
-  align-items: center;
+section {
+  padding: 94px;
 }
-.teamcard-list.container {
+.teamcard-list {
   display: flex;
   gap: 30px;
   justify-content: center;
-  align-items: center;
 }
 .upper-caption {
   font-weight: 500;
@@ -344,11 +375,8 @@ button[type="button"]:active {
   padding-bottom: 30px;
   text-align: center;
 }
-footer {
-  background-color: var(--background-footer-color);
-  padding: 60px 0;
-}
-.filters.container{
+
+.filters.container {
   display: flex;
   gap: 8px;
   justify-content: center;
