@@ -41,11 +41,11 @@ body {
 
 .title-about {
   font-weight: 700;
-  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
   color: var(--bodytext-color);
 }
 
@@ -146,6 +146,7 @@ body {
   font-weight: 700;
   line-height: 1.16rem;
   letter-spacing: 0.03;
+  margin-bottom: 50px;
 }
 .teamcard-list > li {
   list-style-type: none;
@@ -172,16 +173,18 @@ body {
 }
 
 .projects-caption .upper-caption {
-  font-size: 18px;
+  margin-bottom: 4px;
   font-weight: 700;
-  line-height: 2rem;
+  font-size: 18px;
+  line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--bodytext-color);
+
 }
 
 .projects-caption .lower-caption {
-  color: var(--text-color);
-  line-height: 1.88rem;
-  letter-spacing: 0.03em;
+  line-height: 1.88;
+  color: var(--text-color)
 }
 
 .footer-address .site {
@@ -281,18 +284,73 @@ button[type="button"]:active {
 
 .link.container {
   display: flex;
+  gap: 30px;
+  justify-content: center;
 }
 .teamcard-list.container {
   display: flex;
 }
 .lorem-list.container {
   display: flex;
+  gap: 30px;
+  justify-content: center;
 }
 .image-section .image-title {
   display: flex;
   justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: var(--bodytext-color);
+  text-align: center;
+  margin-bottom: 50px;
 }
 .teamcard-section > .teamcard-title {
   display: flex;
   justify-content: center;
+  height: ;
+}
+.image-section {
+  margin: 0px;
+}
+.teamcard-section.container {
+  width: 100%;
+  margin: 0px;
+  align-items: center;
+}
+.teamcard-list.container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.upper-caption {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--bodytext-color);
+}
+.lower-caption {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--text-color);
+}
+.team-caption {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+footer {
+  background-color: var(--background-footer-color);
+  padding: 60px 0;
+}
+.filters.container{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
