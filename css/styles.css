@@ -19,6 +19,7 @@ p {
 body {
   font-family: "Roboto", sans-serif;
   color: var(--bodytext-color);
+  font-size: 16px;
 }
 
 .logo-web-top,
@@ -26,9 +27,8 @@ body {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.19rem;
-  letter-spacing: 0.03em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 1.19;
+  letter-spacing: 0.03;
 }
 
 .logo-studio-top {
@@ -40,21 +40,31 @@ body {
 }
 
 .title-about {
+  width: 270px;
+  height: 16px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03;
   text-transform: uppercase;
   margin-bottom: 10px;
+  justify-content: center;
   color: var(--bodytext-color);
 }
 
 .text-about {
+  font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
-  width: 270px;
+  letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
 .navigation-links {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02;
   gap: 46px;
   margin-left: 93px;
   display: flex;
@@ -66,8 +76,8 @@ body {
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.14rem;
-  letter-spacing: 0.02em;
+  line-height: 1.14;
+  letter-spacing: 0.02;
 }
 .navigation-links > li {
   list-style-type: none;
@@ -93,7 +103,7 @@ body {
   color: var(--text-color);
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.14rem;
+  line-height: 1.14;
   letter-spacing: 0.02;
 }
 .contact a:hover,
@@ -116,33 +126,21 @@ body {
   gap: 30px;
 }
 .projects-links-item {
-  width: 370px;
+  width: auto;
   height: auto;
   flex-basis: 13.3;
 }
 .projects-caption {
 }
 .title-main.container {
-  width: 696px;
-  margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06;
   text-transform: uppercase;
   color: var(--main-white);
-}
-
-.title-main + button[type="button"] {
-  color: var(--main-white);
-  font-weight: 700;
-  line-height: 1.88rem;
-  letter-spacing: 0.06em;
-  justify-items: center;
-  display: flex;
-  margin: auto;
 }
 
 .link > li {
@@ -154,8 +152,12 @@ body {
 }
 .filters button {
   font-weight: 500;
-  line-height: 1.62rem;
+  line-height: 1.63;
   letter-spacing: 0.03;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+
 }
 .filters.container {
   display: flex;
@@ -164,22 +166,22 @@ body {
 .team-caption .upper-caption {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1rem;
-  letter-spacing: 0.03em;
+  line-height: 1;
+  letter-spacing: 0.03;
 }
 
 .team-caption .lower-caption {
   font-size: 14px;
   color: var(--text-color);
-  line-height: 1.46rem;
-  letter-spacing: 0.03em;
+  line-height: 1.46;
+  letter-spacing: 0.03;
 }
 
-.projects-caption .upper-caption, {
+.projects-caption .upper-caption {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06;
   color: var(--bodytext-color);
   margin-top: 20px;
   margin-bottom: 4px;
@@ -200,8 +202,8 @@ footer {
   text-decoration: none;
   color: var(--main-white);
   font-size: 14px;
-  line-height: 1.71rem;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
+  letter-spacing: 0.03;
   list-style-type: none;
 }
 .footer-address .site:hover,
@@ -213,7 +215,7 @@ footer {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
-  line-height: 1.71rem;
+  line-height: 1.71;
 }
 .footer-address .contact:hover,
 .footer-address .contact:focus,
@@ -226,12 +228,15 @@ footer {
 }
 button[type="button"] {
   cursor: pointer;
+  
 }
 button[type="button"]:hover,
 button[type="button"]:focus,
 button[type="button"]:active {
   color: var(--main-white);
   background: var(--selection-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 }
 
 .logo-web-bottom,
@@ -239,8 +244,8 @@ button[type="button"]:active {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.19rem;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
+  letter-spacing: 0.03;
 }
 .logo-web-bottom {
   color: var(--selection-color);
@@ -251,21 +256,34 @@ button[type="button"]:active {
 .background-footer {
   display: block;
   margin: auto;
-  width: 1600px;
+  width: auto;
   height: 252px;
   background-color: var(--footerbackground-color);
 }
 .main-button {
   font-weight: 700;
   line-height: 1.88;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06;
   text-align: center;
-  background-color: #2196f3;
+  height: 50px;
+  width: 200px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--selection-color);
+}
+
+.main-button:hover,
+.main-button:focus,
+.main-button:active {
+  color: var(--main-white);
+  background: var(--selection-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 }
 .main-section-background {
   margin: auto;
   height: 600px;
-  width: 1600px;
+  width: auto;
   margin-bottom: 50px;
   text-align: center;
   padding: 200px 0;
@@ -288,7 +306,7 @@ button[type="button"]:active {
   justify-content: center;
   list-style: none;
   padding: 0;
-  width: 1600px;
+  width: auto;
   border: 1px solid #ececec;
 }
 .header.container {
@@ -298,24 +316,27 @@ button[type="button"]:active {
 
 .lorem-list.container {
   display: flex;
-  gap: 30px;
-  justify-content: center;
-  margin-bottom: 30px;
+  height: 101px;
+  width: 1170px;
 }
 .image-title {
-  display: flex;
-  justify-content: center;
+  width: auto;
+  height: 42px;
+  display: block;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.16rem;
-  letter-spacing: 0.03em;
+  line-height: 1.16;
+  letter-spacing: 0.03;
   margin-bottom: 50px;
   color: var(--bodytext-color);
 }
 
-.image-section {
+.image-section container {
   margin: 0px;
+  width: 1170px;
+  height: 386px;
+
 }
 .link.container {
   display: flex;
@@ -325,7 +346,7 @@ button[type="button"]:active {
 .teamcard-section-background {
   display: block;
   margin: auto;
-  width: 1600px;
+  width: auto;
   height: 648px;
   background-color: var(--teamsectionbackgroundn-color);
 }
@@ -338,7 +359,7 @@ button[type="button"]:active {
 .teamcard-title {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.16rem;
+  line-height: 1.16;
   letter-spacing: 0.03;
   display: flex;
   justify-content: center;
@@ -347,6 +368,10 @@ button[type="button"]:active {
 .teamcard-figure {
   display: block;
   background-color: var(--main-white);
+  width: 270px;
+  height: 368px;
+  gap: 30px;
+  margin: 0px;
 }
 section {
   padding: 94px;
@@ -361,7 +386,7 @@ section {
   font-size: 16px;
   margin-bottom: 10px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03;
   color: var(--bodytext-color);
 }
 .lower-caption {
@@ -371,6 +396,7 @@ section {
   color: var(--text-color);
 }
 .team-caption {
+  display: block;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
