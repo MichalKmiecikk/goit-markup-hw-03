@@ -125,6 +125,12 @@ body {
 /* buttony */
 .projects-list {
   display: flex;
+  list-style-type: none
+  ;
+}
+.projects-caption {
+  display: block;
+  border-top: 0px solid ;
 }
 
 .title-main.container {
