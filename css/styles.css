@@ -13,7 +13,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
   margin: 0px;
 }
 body {
@@ -116,6 +117,9 @@ body {
   align-content: center;
   justify-content: center;
 }
+.projects-list {
+  list-style-type: none;
+}
 
 .projects-links > li {
   list-style-type: none;
@@ -150,16 +154,16 @@ body {
 .teamcard-list > li {
   list-style-type: none;
 }
-.filters button {
+.filters {
+  width: auto;
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.03;
   text-align: center;
   border-radius: 4px;
-  background-color: #F5F4FA;
-
+  background-color: #f5f4fa;
 }
-.filters.container {
+.filters {
   display: flex;
   justify-content: center;
 }
@@ -228,7 +232,6 @@ footer {
 }
 button[type="button"] {
   cursor: pointer;
-  
 }
 button[type="button"]:hover,
 button[type="button"]:focus,
@@ -313,6 +316,9 @@ button[type="button"]:active {
   display: flex;
   align-items: center;
 }
+.lorem-area:not(:last-child) {
+  margin-right: 30px;
+}
 
 .lorem-list.container {
   display: flex;
@@ -336,7 +342,6 @@ button[type="button"]:active {
   margin: 0px;
   width: 1170px;
   height: 386px;
-
 }
 .link.container {
   display: flex;
@@ -356,22 +361,25 @@ button[type="button"]:active {
   align-items: center;
   margin: auto;
 }
-.teamcard-title {
+.teamcard-title.container {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03;
   display: flex;
   justify-content: center;
-  align-self: baseline;
+  margin-bottom: 50px;
 }
 .teamcard-figure {
+  justify-content: center;
   display: block;
   background-color: var(--main-white);
   width: 270px;
   height: 368px;
-  gap: 30px;
   margin: 0px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 section {
   padding: 94px;
