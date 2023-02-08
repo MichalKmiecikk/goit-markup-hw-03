@@ -459,13 +459,6 @@ section {
   letter-spacing: 0.03;
   color: var(--bodytext-color);
 }
-.lower-caption {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1;
-  color: var(--text-color);
-  margin-bottom: 0px;
-}
 .team-caption {
   display: block;
   padding-top: 30px;
