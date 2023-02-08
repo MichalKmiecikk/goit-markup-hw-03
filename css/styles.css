@@ -437,12 +437,14 @@ section {
   gap: 30px;
   justify-content: center;
 }
-.upper-caption {
-  text-justify: auto;
+.team-caption > .upper-caption {
+  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
   line-height: 1.19;
+  margin-left: 0px;
+  margin-right: 0px;
   letter-spacing: 0.03;
   color: var(--bodytext-color);
 }
