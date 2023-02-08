@@ -59,6 +59,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  vertical-align: top;
 }
 
 .navigation-links {
@@ -133,14 +134,13 @@ body {
 .projects-filters:not(:last-child) {
   margin-right: 8px;
 }
-.upper-caption{
+.upper-caption {
   display: flex;
-font-size: 18px;
-font-weight: 700;
-line-height: 2;
-letter-spacing: 0.06em;
-text-align: left;
-
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
 }
 /* buttony */
 .projects-list li {
@@ -361,7 +361,7 @@ nav a {
   align-items: center;
 }
 .lorem-area:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 0px;
 }
 
 .lorem-list.container {
@@ -406,13 +406,15 @@ nav a {
   margin: auto;
 }
 .teamcard-title.container {
+  margin-left: 0px;
+  margin-right: 0px;
   padding-top: 94px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   margin-bottom: 50px;
 }
 .teamcard-figure {
@@ -436,6 +438,7 @@ section {
   justify-content: center;
 }
 .upper-caption {
+  text-justify: auto;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
