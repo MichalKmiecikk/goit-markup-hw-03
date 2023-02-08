@@ -134,14 +134,7 @@ body {
 .projects-filters:not(:last-child) {
   margin-right: 8px;
 }
-.upper-caption {
-  display: flex;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  text-align: left;
-}
+
 /* buttony */
 .projects-list li {
   list-style-type: none;
