@@ -31,7 +31,8 @@ section {
 
 .container {
   width: 1200px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
 }
 
@@ -59,14 +60,14 @@ section {
 
 /* header */
 .header-box {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  width: auto;
   height: 80px;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  list-style: none;
   padding: 0px;
-  width: auto;
+  list-style: none;
   border: 1px solid #ececec;
 }
 
@@ -77,6 +78,8 @@ section {
 .header.container {
   display: flex;
   align-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* end - header */
@@ -145,7 +148,8 @@ nav a {
 
 /* main */
 .title-main.container {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: 0px;
   margin-bottom: 30px;
   font-weight: 900;
@@ -160,6 +164,8 @@ nav a {
 
 .main-section-background {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 0px;
   margin-left: 0px;
   height: 600px;
@@ -224,28 +230,37 @@ nav a {
   width: 270px;
   height: auto;
 }
-
+.lorem-section-area {
+  display: flex;
+  justify-content: center;
+}
 .lorem-area:not(:last-child) {
   margin-right: 30px;
 }
 
 .lorem-list {
   display: flex;
+  justify-content: center;
   width: 1170px;
   height: auto;
   padding-left: 0px;
   padding-bottom: 0px;
-  margin: auto;
+  margin-left: 0px;
+  margin-right: 0px;
   list-style-type: none;
 }
 /* end - lorem section */
 
 /* image section */
 .image-section {
+  justify-content: center;
+  display: block;
   padding-top: 0px;
 }
 
 .image-title {
+  display: block;
+  justify-content: center;
   width: auto;
   height: 42px;
   display: block;
@@ -258,10 +273,14 @@ nav a {
   color: var(--bodytext-color);
 }
 
-.link.container {
+.link-container {
   display: flex;
   gap: 30px;
   justify-content: center;
+  margin-right: 0px;
+  margin-left: 0px;
+  list-style-type: none;
+  padding-left: 0px;
 }
 
 .image-section.container {
@@ -356,47 +375,11 @@ nav a {
 
 /* end- teamcard section */
 /* footer */
-footer {
-  background-color: var(--background-footer-color);
-  padding: 60px 0;
-}
-footer a {
-  text-decoration: none;
-}
-.footer-address .site {
-  color: var(--main-white);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03;
-  list-style-type: none;
-}
-
-.footer-address .site:hover,
-.footer-address .site:focus,
-.footer-address .site:active {
-  color: var(--selection-color);
-}
-
-.footer-address .contact {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.footer-address .contact:hover,
-.footer-address .contact:focus,
-.footer-address .contact:active {
-  color: var(--selection-color);
-}
-
-.footer-address > li {
-  list-style-type: none;
-  justify-content: left;
-}
-
 /* logo-bottom */
 .logo-web-bottom,
 .logo-studio-bottom {
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -412,14 +395,66 @@ footer a {
   color: var(--main-white);
 }
 
-.background-footer {
-  display: block;
-  margin: auto;
-  width: auto;
+/* end - logo bottom */
+
+
+.footer-area {
   height: 252px;
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: var(--footerbackground-color);
 }
-/* end - logo bottom */
+
+.footer-contacts-list .site{
+color: var(--main-white);
+}
+
+.footer-contacts-list .contact{
+  color: #FFFFFF99;
+}
+
+.footer-contacts-list a{
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03;
+  list-style-type: none;
+}
+
+.footer-contacts-list .site:hover,
+.footer-contacts-list .site:focus,
+.footer-contacts-list .site:active {
+  color: var(--selection-color);
+}
+
+.footer-contacts-list {
+  padding-left: 0px;
+}
+
+.footer-contacts-list li {
+  display: block;
+  justify-content: flex-start;
+  padding-bottom: 9px;
+}
+
+.footer-contacts-list > li {
+  list-style-type: none;
+}
+
+.footer-contacts-list a {
+  text-decoration: none;
+}
+
+.footer-address .contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-contacts-list .contact:hover,
+.footer-contacts-list .contact:focus,
+.footer-contacts-list .contact:active {
+  color: var(--selection-color);
+}
 
 /* portfolio */
 /* buttons */
@@ -449,6 +484,15 @@ button[type="button"]:active {
   margin-right: 8px;
 }
 /* end - buttons */
+.projects-section {
+  display: block;
+  justify-content: center;
+}
+.projects.container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
 .projects-filter {
   height: 54px;
   width: 572px;
