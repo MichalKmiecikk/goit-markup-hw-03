@@ -170,7 +170,6 @@ nav a {
   margin-left: 0px;
   height: 600px;
   width: auto;
-  width: auto;
   text-align: center;
   background-color: var(--footerbackground-color);
 }
@@ -180,7 +179,6 @@ nav a {
   line-height: 1.88;
   letter-spacing: 0.06;
   text-align: center;
-  height: 50px;
   width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -228,7 +226,6 @@ nav a {
 
 .lorem-area {
   width: 270px;
-  height: auto;
 }
 .lorem-section-area {
   display: flex;
@@ -242,7 +239,6 @@ nav a {
   display: flex;
   justify-content: center;
   width: 1170px;
-  height: auto;
   padding-left: 0px;
   padding-bottom: 0px;
   margin-left: 0px;
@@ -262,7 +258,6 @@ nav a {
   display: block;
   justify-content: center;
   width: auto;
-  height: 42px;
   display: block;
   text-align: center;
   font-size: 36px;
@@ -286,7 +281,6 @@ nav a {
 .image-section.container {
   margin: 0px;
   width: 1170px;
-  height: auto;
 }
 
 /* end - image section */
@@ -294,7 +288,6 @@ nav a {
 .teamcard-section-background {
   width: auto;
   display: block;
-  height: 648px;
   background-color: var(--teamsectionbackgroundn-color);
 }
 
@@ -397,23 +390,25 @@ nav a {
 
 /* end - logo bottom */
 
-
+footer {
+  background-color: var(--footerbackground-color);
+  width: auto;
+}
 .footer-area {
   height: 252px;
   padding-bottom: 60px;
   padding-top: 60px;
-  background-color: var(--footerbackground-color);
 }
 
-.footer-contacts-list .site{
-color: var(--main-white);
+.footer-contacts-list .site {
+  color: var(--main-white);
 }
 
-.footer-contacts-list .contact{
-  color: #FFFFFF99;
+.footer-contacts-list .contact {
+  color: #ffffff99;
 }
 
-.footer-contacts-list a{
+.footer-contacts-list a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03;
