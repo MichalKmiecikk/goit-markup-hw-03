@@ -89,7 +89,7 @@ section {
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.02;
-  gap: 46px;
+  text-indent: 46px;
   margin-left: 93px;
   display: flex;
   align-items: center;
@@ -212,6 +212,7 @@ nav a {
   margin-bottom: 10px;
   justify-content: center;
   color: var(--bodytext-color);
+  
 }
 
 .text-about {
